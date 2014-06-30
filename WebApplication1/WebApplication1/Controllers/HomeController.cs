@@ -10,7 +10,7 @@ namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
-        [FacebookAuthorize("email", "user_photos")]
+        [FacebookAuthorize()]
         public async Task<ActionResult> Index(FacebookContext context)
         {
             if (ModelState.IsValid)
